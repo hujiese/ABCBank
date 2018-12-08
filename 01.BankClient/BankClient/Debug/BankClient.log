@@ -1,0 +1,37 @@
+﻿生成启动时间为 2018/12/8 17:02:02。
+     1>项目“F:\ABCBank\day02\BankClient\BankClient\BankClient.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt UI\LoginForm.cpp
+         LoginForm.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\ABCBank\day02\BankClient\Debug\BankClient.exe" /INCREMENTAL /NOLOGO opencv_ml248d.lib opencv_calib3d248d.lib opencv_contrib248d.lib opencv_core248d.lib opencv_features2d248d.lib opencv_flann248d.lib opencv_gpu248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib opencv_legacy248d.lib opencv_objdetect248d.lib opencv_ts248d.lib opencv_video248d.lib opencv_nonfree248d.lib opencv_ocl248d.lib opencv_photo248d.lib opencv_stitching248d.lib opencv_superres248d.lib opencv_videostab248d.lib opencv_objdetect248.lib opencv_ts248.lib opencv_video248.lib opencv_nonfree248.lib opencv_ocl248.lib opencv_photo248.lib opencv_stitching248.lib opencv_superres248.lib opencv_videostab248.lib opencv_calib3d248.lib opencv_contrib248.lib opencv_core248.lib opencv_features2d248.lib opencv_flann248.lib opencv_gpu248.lib opencv_highgui248.lib opencv_imgproc248.lib opencv_legacy248.lib opencv_ml248.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\ABCBank\day02\BankClient\Debug\BankClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\ABCBank\day02\BankClient\Debug\BankClient.lib" /MACHINE:X86 Debug\JApplication.obj
+         Debug\JButton.obj
+         Debug\JEdit.obj
+         Debug\JForm.obj
+         Debug\JLabel.obj
+         Debug\JLinkText.obj
+         Debug\JMessageBox.obj
+         Debug\JWindow.obj
+         Debug\JWindowBase.obj
+         Debug\main.obj
+         Debug\BalanceInquiryForm.obj
+         Debug\ChangePasswordForm.obj
+         Debug\CloseAccountForm.obj
+         Debug\DepositForm.obj
+         Debug\DetailStatementForm.obj
+         Debug\FormManager.obj
+         Debug\LoginForm.obj
+         Debug\MainMenuForm.obj
+         Debug\OpenAccountForm.obj
+         Debug\QueryAccountHistoryBillForm.obj
+         Debug\QueryDayBillForm.obj
+         Debug\QueryHistoryBillForm.obj
+         Debug\TransferForm.obj
+         Debug\Validator.obj
+         Debug\WithdrawalForm.obj
+         BankClient.vcxproj -> F:\ABCBank\day02\BankClient\Debug\BankClient.exe
+     1>已完成生成项目“F:\ABCBank\day02\BankClient\BankClient\BankClient.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.33
