@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="PUBLIC">
+      <UniqueIdentifier>{6422b977-face-41ca-8601-75b1a14c54fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMD">
+      <UniqueIdentifier>{d47d2cee-5372-483f-b181-a2d728ea9304}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DAL">
+      <UniqueIdentifier>{dc0be2c3-ef20-46bd-8880-561371708300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BankSession.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BankThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Date.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Exception.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Idea.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JInStream.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JOutStream.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JThread.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\JUtil.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Logging.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\LogStream.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\MD5.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Socket.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\StringUtil.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Systemconfig.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\Timestamp.cpp">
+      <Filter>PUBLIC</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\BalanceInquiry.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\ChangePassword.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\CloseAccount.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\Deposit.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\OpenAccount.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\QueryAccountHistoryBill.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\QueryDayBill.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\QueryHistoryBill.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\Transfer.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\UserLogin.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD\Withdrawal.cpp">
+      <Filter>CMD</Filter>
+    </ClCompile>
+    <ClCompile Include="DAL\BankService.cpp">
+      <Filter>DAL</Filter>
+    </ClCompile>
+    <ClCompile Include="DAL\MysqlDB.cpp">
+      <Filter>DAL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BankSession.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BankThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TransactionManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Date.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Exception.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Idea.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JInStream.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JOutStream.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JThread.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\JUtil.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Logging.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LogStream.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MD5.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Singleton.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Socket.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\StringUtil.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SystemConfig.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Timestamp.h">
+      <Filter>PUBLIC</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\BalanceInquiry.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\ChangePassword.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\CloseAccount.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Deposit.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\OpenAccount.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\QueryAccountHistoryBill.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\QueryDayBill.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\QueryHistoryBill.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Transaction.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Transfer.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\UserLogin.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="CMD\Withdrawal.h">
+      <Filter>CMD</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\Account.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\BankService.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\IBankService.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\MysqlDB.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+    <ClInclude Include="DAL\TransDetail.h">
+      <Filter>DAL</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

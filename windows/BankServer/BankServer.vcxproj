@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86B41068-3793-4914-B7C8-40331B72BCD8}</ProjectGuid>
+    <RootNamespace>BankServer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\Bin\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BankSession.cpp" />
+    <ClCompile Include="BankThread.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="TransactionManager.cpp" />
+    <ClCompile Include="..\Public\Date.cpp" />
+    <ClCompile Include="..\Public\Exception.cpp" />
+    <ClCompile Include="..\Public\Idea.cpp" />
+    <ClCompile Include="..\Public\JInStream.cpp" />
+    <ClCompile Include="..\Public\JOutStream.cpp" />
+    <ClCompile Include="..\Public\JThread.cpp" />
+    <ClCompile Include="..\Public\JUtil.cpp" />
+    <ClCompile Include="..\Public\Logging.cpp" />
+    <ClCompile Include="..\Public\LogStream.cpp" />
+    <ClCompile Include="..\Public\MD5.cpp" />
+    <ClCompile Include="..\Public\Socket.cpp" />
+    <ClCompile Include="..\Public\StringUtil.cpp" />
+    <ClCompile Include="..\Public\Systemconfig.cpp" />
+    <ClCompile Include="..\Public\Timestamp.cpp" />
+    <ClCompile Include="CMD\BalanceInquiry.cpp" />
+    <ClCompile Include="CMD\ChangePassword.cpp" />
+    <ClCompile Include="CMD\CloseAccount.cpp" />
+    <ClCompile Include="CMD\Deposit.cpp" />
+    <ClCompile Include="CMD\OpenAccount.cpp" />
+    <ClCompile Include="CMD\QueryAccountHistoryBill.cpp" />
+    <ClCompile Include="CMD\QueryDayBill.cpp" />
+    <ClCompile Include="CMD\QueryHistoryBill.cpp" />
+    <ClCompile Include="CMD\Transfer.cpp" />
+    <ClCompile Include="CMD\UserLogin.cpp" />
+    <ClCompile Include="CMD\Withdrawal.cpp" />
+    <ClCompile Include="DAL\BankService.cpp" />
+    <ClCompile Include="DAL\MysqlDB.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BankSession.h" />
+    <ClInclude Include="BankThread.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="TransactionManager.h" />
+    <ClInclude Include="..\Public\Date.h" />
+    <ClInclude Include="..\Public\Exception.h" />
+    <ClInclude Include="..\Public\Idea.h" />
+    <ClInclude Include="..\Public\JInStream.h" />
+    <ClInclude Include="..\Public\JOutStream.h" />
+    <ClInclude Include="..\Public\JThread.h" />
+    <ClInclude Include="..\Public\JUtil.h" />
+    <ClInclude Include="..\Public\Logging.h" />
+    <ClInclude Include="..\Public\LogStream.h" />
+    <ClInclude Include="..\Public\MD5.h" />
+    <ClInclude Include="..\Public\Singleton.h" />
+    <ClInclude Include="..\Public\Socket.h" />
+    <ClInclude Include="..\Public\StringUtil.h" />
+    <ClInclude Include="..\Public\SystemConfig.h" />
+    <ClInclude Include="..\Public\Timestamp.h" />
+    <ClInclude Include="CMD\BalanceInquiry.h" />
+    <ClInclude Include="CMD\ChangePassword.h" />
+    <ClInclude Include="CMD\CloseAccount.h" />
+    <ClInclude Include="CMD\Deposit.h" />
+    <ClInclude Include="CMD\OpenAccount.h" />
+    <ClInclude Include="CMD\QueryAccountHistoryBill.h" />
+    <ClInclude Include="CMD\QueryDayBill.h" />
+    <ClInclude Include="CMD\QueryHistoryBill.h" />
+    <ClInclude Include="CMD\Transaction.h" />
+    <ClInclude Include="CMD\Transfer.h" />
+    <ClInclude Include="CMD\UserLogin.h" />
+    <ClInclude Include="CMD\Withdrawal.h" />
+    <ClInclude Include="DAL\Account.h" />
+    <ClInclude Include="DAL\BankService.h" />
+    <ClInclude Include="DAL\IBankService.h" />
+    <ClInclude Include="DAL\MysqlDB.h" />
+    <ClInclude Include="DAL\TransDetail.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
